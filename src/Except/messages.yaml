@@ -1,0 +1,9 @@
+exceptions:
+  1049:   # Unknown database
+    keys: ['database']
+    pattern: Unknown database \'(?'database'\w+)\'
+    friendly: Could not find database with name ':database'
+  1062:   # Duplicate entry
+    keys: ['field']
+    pattern: Duplicate entry \'(?'field'[^\']+?)\' for key \'(?'key'[^\']+?)\'
+    friendly: Duplicate entry ':field' for key ':key'
